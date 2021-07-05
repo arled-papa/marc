@@ -1,0 +1,8 @@
+[submodule "5G-EmPOWER"]
+	path = 5G-EmPOWER
+	url = https://github.com/EstefaniaCC/empower-runtime-old-LTE-Wifi
+	branch = master
+[submodule "FlexRAN"]
+	path = FlexRAN
+	url = https://github.com/xfoukas/flexran-rtc.git
+	branch = master

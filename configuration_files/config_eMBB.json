@@ -1,0 +1,1 @@
+{"totalSimTime": 600, "slices": [{"deactivation": {"constant": 500, "type": "Det"}, "activation": {"lam": 0.1, "type": "Exp"}, "cellArea": 1, "sliceType": "eMBB", "ueDensity": 10}]}
