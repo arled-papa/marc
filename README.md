@@ -1,22 +1,30 @@
 # Table of Contents: #
 
-1. [Hardware Requirements](#hardware-requirements)
+1. [Introduction to MARC](#introduction-to-marc)
 
-2. [Software Requirements 5G-EmPOWER](#software-requirements-5gempower)
+2. [Hardware Requirements](#hardware-requirements)
 
-3. [Running 5G-EmPOWER](#running-5g-empower)
+3. [Software Requirements 5G-EmPOWER](#software-requirements-5gempower)
 
-4. [Software Requirements FlexRAN](#software-requirements-flexran)
+4. [Running 5G-EmPOWER](#running-5g-empower)
 
-5. [Running FlexRAN](#running-flexran)
+5. [Software Requirements FlexRAN](#software-requirements-flexran)
 
-6. [Applying Changes to FlexRAN](#applying-changes-to-flexran)
+6. [Running FlexRAN](#running-flexran)
 
-7. [Software Requirements MARC](#software-requirements-marc)
+7. [Applying Changes to FlexRAN](#applying-changes-to-flexran)
 
-8. [Running MARC](#running-marc)
+8. [Software Requirements MARC](#software-requirements-marc)
 
-9. [Fetching Results](#fetching-results)
+9. [Running MARC](#running-marc)
+
+10. [Fetching Results](#fetching-results)
+
+# Introduction to MARC #
+
+MARC is a Software-Defined Radio Access Network controller benchmark. This is the original version of the code as it appeared in the journal published at TNSM 2021.
+Curenntly, MARC is utilized to benchark [5G-EmPOWER](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8680665) and [FlexRAN](https://dl.acm.org/doi/pdf/10.1145/2999572.2999599) SD-RAN controllers
+
 
 # Hardware Requirements #
 

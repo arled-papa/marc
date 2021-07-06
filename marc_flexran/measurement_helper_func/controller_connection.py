@@ -53,7 +53,7 @@ def connect_flexran(address, status, agents=None, users=None, runs=None):
 
     elif status == "cpu_stats":
         command = 'cd ~/marc/measurement_tools; ' \
-                  'sudo rm -rf flexran_cpu_utilization; sudo python flexran_cpu_utilization.py'
+                  'sudo rm -rf cpu_utilization; sudo python flexran_cpu_utilization.py'
         task = mp.Process(target=start, args=(address, command))
 
     elif status == "packet_rx":
@@ -68,7 +68,7 @@ def connect_flexran(address, status, agents=None, users=None, runs=None):
 
     elif status == "mem_stats":
         command = "cd ~/marc/measurement_tools;" \
-                  " sudo rm -rf flexran_mem_utilization; sudo python flexran_mem_utilization.py"
+                  " sudo rm -rf mem_utilization; sudo python flexran_mem_utilization.py"
         task = mp.Process(target=start, args=(address, command))
 
     elif status == "terminate_all_scripts":
