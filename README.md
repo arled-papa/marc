@@ -20,10 +20,12 @@
 
 10. [Fetching Results](#fetching-results)
 
+11. [Plotting Results](#plotting-results)
+
 # Introduction to MARC #
 
 MARC is a Software-Defined Radio Access Network controller benchmark. This is the original version of the code as it appeared in the journal published at TNSM 2021.
-Curenntly, MARC is utilized to benchark [5G-EmPOWER](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8680665) and [FlexRAN](https://dl.acm.org/doi/pdf/10.1145/2999572.2999599) SD-RAN controllers
+Curenntly, MARC is utilized to benchark [5G-EmPOWER](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8680665) and [FlexRAN](https://dl.acm.org/doi/pdf/10.1145/2999572.2999599) SD-RAN controllers.
 
 
 # Hardware Requirements #
@@ -329,5 +331,81 @@ The results are stored in the PC running MARC as follows:
 
 1) 5gempower_measurements
 2) flexran_measurements
+
+Be aware that when changes are made on the FlexRAN controller the results should be copied to a folder named altflexran_measurements
+
+# Plotting Results #
+
+Currently ```~/marc/data.zip``` contains the original data from original version of the MARC as it appeared in the journal published at TNSM 2021. 
+
+## Install Python Dependencies: ##
+
+``` pip3 install pandas==0.25.3 matplotlib==3.1.1 numpy==1.16.2```
+
+## Plot Current Measurements: ##
+
+```
+git clone https://github.com/arled-papa/marc.git
+
+cd marc
+
+unzip data.zip
+
+cd plot_functions
+
+mkdir output_plots
+
+```
+
+### For CPU Measurements: ###
+
+```nano cpu_plot.py```
+
+Select the controller you want to plot
+
+```python3 cpu_plot.py```
+
+### For Memory Measurements: ###
+
+```nano mem_plot_heatmap.py```
+
+Select the controller you want to plot
+
+```python3 mem_plot_heatmap.py```
+
+### For Delay Measurements: ###
+
+```nano delay_plot.py```
+
+Select the controller you want to plot
+
+```python3 delay_plot.py```
+
+### For Controller Received Msg/Bytes Measurements: ###
+
+```nano rx_rate_plot.py```
+
+Select the controller you want to plot also the msg/s or Kbit/s
+
+```python3 rx_rate_plot.py```
+
+### For Controller Transmitted Msg/Bytes Measurements: ###
+
+```nano tx_rate_plot.py```
+
+Select the controller you want to plot also the msg/s or Kbit/s
+
+```python3 tx_rate_plot.py```
+
+All the plots are stored in:
+
+``` ~/marc/plot_functions/output_plots ```
+
+## Plot New Measurements: ##
+
+Run the measurements according to your configurations. Store the results into a folder named data in the marc directory as in the current version. 
+Inside the data folder store the 3 folders: 1) 5gempower_measurements 2) flexran_measurements 3) altflexran_measurements.
+Run the plot_functions as above.
+
 
 
