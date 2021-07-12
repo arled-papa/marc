@@ -24,7 +24,7 @@
 
 # Introduction to MARC #
 
-MARC is a Software-Defined Radio Access Network controller benchmark. This is the original version of the code as it appeared in the journal published at TNSM 2021.
+MARC is a Software-Defined Radio Access Network controller benchmark. This is the original version of the code as it appeared in the journal published at [TNSM 2021:](https://ieeexplore.ieee.org/document/9477430).
 Curenntly, MARC is utilized to benchark [5G-EmPOWER](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8680665) and [FlexRAN](https://dl.acm.org/doi/pdf/10.1145/2999572.2999599) SD-RAN controllers.
 
 
